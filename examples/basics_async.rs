@@ -1,5 +1,5 @@
 // Use the asynchronous cache.
-use moka::future::Cache;
+use moka2::future::Cache;
 
 #[tokio::main]
 async fn main() {

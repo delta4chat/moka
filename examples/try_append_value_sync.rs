@@ -6,7 +6,7 @@ use std::{
     sync::{Arc, RwLock},
 };
 
-use moka::{
+use moka2::{
     ops::compute::{CompResult, Op},
     sync::Cache,
 };

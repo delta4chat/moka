@@ -1,4 +1,4 @@
-use moka::sync::Cache;
+use moka2::sync::Cache;
 
 fn main() {
     let cache = Cache::builder()

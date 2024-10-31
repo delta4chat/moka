@@ -1,7 +1,7 @@
 //! This example demonstrates how to increment a cached `u64` counter. It uses the
 //! `and_upsert_with` method of `Cache`.
 
-use moka::{future::Cache, Entry};
+use moka2::{future::Cache, Entry};
 
 #[tokio::main]
 async fn main() {

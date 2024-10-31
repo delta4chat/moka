@@ -87,7 +87,7 @@ where
     /// // moka = { version = "0.12.8", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::{
+    /// use moka2::{
     ///     future::Cache,
     ///     ops::compute::{CompResult, Op},
     /// };
@@ -272,7 +272,7 @@ where
     /// // moka = { version = "0.12.8", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -345,7 +345,7 @@ where
     /// // moka = { version = "0.12", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -387,7 +387,7 @@ where
     /// // moka = { version = "0.12", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -428,7 +428,7 @@ where
     /// // moka = { version = "0.12", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -511,7 +511,7 @@ where
     /// // moka = { version = "0.12", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -586,7 +586,7 @@ where
     /// // moka = { version = "0.12", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -727,7 +727,7 @@ where
     /// // moka = { version = "0.12.8", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::{
+    /// use moka2::{
     ///     future::Cache,
     ///     ops::compute::{CompResult, Op},
     /// };
@@ -912,7 +912,7 @@ where
     /// // moka = { version = "0.12.8", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -986,7 +986,7 @@ where
     /// // moka = { version = "0.12", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -1027,7 +1027,7 @@ where
     /// // moka = { version = "0.12", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -1067,7 +1067,7 @@ where
     /// // moka = { version = "0.12", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -1154,7 +1154,7 @@ where
     /// // moka = { version = "0.12", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -1228,7 +1228,7 @@ where
     /// // moka = { version = "0.12", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {

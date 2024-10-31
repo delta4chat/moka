@@ -1,7 +1,7 @@
 //! This example demonstrates how to increment a cached `u64` counter. It uses the
 //! `and_compute_with` method of `Cache`.
 
-use moka::{
+use moka2::{
     future::Cache,
     ops::compute::{CompResult, Op},
 };

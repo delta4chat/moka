@@ -3,7 +3,7 @@
 
 use std::{io::Cursor, pin::Pin, sync::Arc};
 
-use moka::{
+use moka2::{
     future::Cache,
     ops::compute::{CompResult, Op},
 };

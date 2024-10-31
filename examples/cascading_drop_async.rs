@@ -1,4 +1,4 @@
-use moka::future::Cache;
+use moka2::future::Cache;
 use std::collections::btree_map;
 use std::collections::BTreeMap;
 use std::sync::mpsc;

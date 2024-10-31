@@ -1,5 +1,5 @@
 // Use the synchronous cache.
-use moka::sync::Cache;
+use moka2::sync::Cache;
 
 use std::thread;
 

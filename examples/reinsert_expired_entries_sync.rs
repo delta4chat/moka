@@ -19,7 +19,7 @@ use std::{
     time::{Duration, Instant},
 };
 
-use moka::{notification::RemovalCause, sync::Cache};
+use moka2::{notification::RemovalCause, sync::Cache};
 
 /// The cache key type.
 pub type Key = String;

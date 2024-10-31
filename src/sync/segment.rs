@@ -147,7 +147,7 @@ impl<K, V, S> SegmentedCache<K, V, S> {
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::SegmentedCache;
+    /// use moka2::sync::SegmentedCache;
     ///
     /// let cache = SegmentedCache::new(10, 4);
     /// cache.insert('n', "Netherland Dwarf");
@@ -587,7 +587,7 @@ where
     /// # Examples
     ///
     /// ```rust
-    /// use moka::sync::SegmentedCache;
+    /// use moka2::sync::SegmentedCache;
     ///
     /// let cache = SegmentedCache::new(100, 4);
     /// cache.insert("Julia", 14);

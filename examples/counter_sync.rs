@@ -1,7 +1,7 @@
 //! This example demonstrates how to increment a cached `u64` counter. It uses the
 //! `and_upsert_with` method of `Cache`.
 
-use moka::{sync::Cache, Entry};
+use moka2::{sync::Cache, Entry};
 
 fn main() {
     let cache: Cache<String, u64> = Cache::new(100);

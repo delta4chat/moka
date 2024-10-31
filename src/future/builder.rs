@@ -28,7 +28,7 @@ use std::{
 /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
 /// // futures = "0.3"
 ///
-/// use moka::future::Cache;
+/// use moka2::future::Cache;
 /// use std::time::Duration;
 ///
 /// #[tokio::main]
@@ -143,7 +143,7 @@ where
     /// // moka = { version = ..., features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -164,7 +164,7 @@ where
     /// Here is a good example:
     ///
     /// ```rust
-    /// # use moka::future::Cache;
+    /// # use moka2::future::Cache;
     /// # #[tokio::main]
     /// # async fn main() {
     /// # let cache = Cache::builder()
@@ -183,7 +183,7 @@ where
     /// does not specify `S`:
     ///
     /// ```compile_fail
-    /// # use moka::future::Cache;
+    /// # use moka2::future::Cache;
     /// # #[tokio::main]
     /// # async fn main() {
     /// # let cache = Cache::builder()

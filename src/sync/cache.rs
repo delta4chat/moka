@@ -65,7 +65,7 @@ use std::{
 /// Here's an example of reading and updating a cache by using multiple threads:
 ///
 /// ```rust
-/// use moka::sync::Cache;
+/// use moka2::sync::Cache;
 ///
 /// use std::thread;
 ///
@@ -178,7 +178,7 @@ use std::{
 /// # Example: Size-based Eviction
 ///
 /// ```rust
-/// use moka::sync::Cache;
+/// use moka2::sync::Cache;
 ///
 /// // Evict based on the number of entries in the cache.
 /// let cache = Cache::builder()
@@ -235,7 +235,7 @@ use std::{
 /// durations for different entries, see the next section.
 ///
 /// ```rust
-/// use moka::sync::Cache;
+/// use moka2::sync::Cache;
 /// use std::time::Duration;
 ///
 /// let cache = Cache::builder()
@@ -274,7 +274,7 @@ use std::{
 /// [exp-update]: ../trait.Expiry.html#method.expire_after_update
 ///
 /// ```rust
-/// use moka::{sync::Cache, Expiry};
+/// use moka2::{sync::Cache, Expiry};
 /// use std::time::{Duration, Instant};
 ///
 /// // In this example, we will create a `sync::Cache` with `u32` as the key, and
@@ -303,7 +303,7 @@ use std::{
 ///     }
 /// }
 ///
-/// /// An expiry that implements `moka::Expiry` trait. `Expiry` trait provides the
+/// /// An expiry that implements `moka2::Expiry` trait. `Expiry` trait provides the
 /// /// default implementations of three callback methods `expire_after_create`,
 /// /// `expire_after_read`, and `expire_after_update`.
 /// ///
@@ -403,7 +403,7 @@ use std::{
 /// // anyhow = "1.0"
 /// // uuid = { version = "1.1", features = ["v4"] }
 ///
-/// use moka::{sync::Cache, notification};
+/// use moka2::{sync::Cache, notification};
 ///
 /// use anyhow::{anyhow, Context};
 /// use std::{
@@ -650,7 +650,7 @@ impl<K, V, S> Cache<K, V, S> {
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache = Cache::new(10);
     /// cache.insert('n', "Netherland Dwarf");
@@ -821,7 +821,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache: Cache<String, u32> = Cache::new(100);
     /// let key = "key1".to_string();
@@ -852,7 +852,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache: Cache<String, u32> = Cache::new(100);
     /// let key = "key1".to_string();
@@ -888,7 +888,7 @@ where
     /// The following code snippet demonstrates this behavior:
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     /// use std::{sync::Arc, thread};
     ///
     /// const TEN_MIB: usize = 10 * 1024 * 1024; // 10MiB
@@ -1113,7 +1113,7 @@ where
     /// The following code snippet demonstrates this behavior:
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     /// use std::{path::Path, thread};
     ///
     /// /// This function tries to get the file size in bytes.
@@ -1306,7 +1306,7 @@ where
     /// The following code snippet demonstrates this behavior:
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     /// use std::{path::Path, thread};
     ///
     /// /// This function tries to get the file size in bytes.
@@ -1747,7 +1747,7 @@ where
     /// # Examples
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache = Cache::new(100);
     /// cache.insert("Julia", 14);

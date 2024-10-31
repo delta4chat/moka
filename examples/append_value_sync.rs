@@ -3,7 +3,7 @@
 
 use std::sync::{Arc, RwLock};
 
-use moka::{sync::Cache, Entry};
+use moka2::{sync::Cache, Entry};
 
 fn main() {
     // We want to store a raw value `Vec<i32>` for each `String` key. We are going to

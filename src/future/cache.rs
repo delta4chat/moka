@@ -71,7 +71,7 @@ use std::sync::atomic::{AtomicBool, Ordering};
 /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
 /// // futures-util = "0.3"
 ///
-/// use moka::future::Cache;
+/// use moka2::future::Cache;
 ///
 /// #[tokio::main]
 /// async fn main() {
@@ -199,7 +199,7 @@ use std::sync::atomic::{AtomicBool, Ordering};
 /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
 /// // futures-util = "0.3"
 ///
-/// use moka::future::Cache;
+/// use moka2::future::Cache;
 ///
 /// #[tokio::main]
 /// async fn main() {
@@ -266,7 +266,7 @@ use std::sync::atomic::{AtomicBool, Ordering};
 /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
 /// // futures-util = "0.3"
 ///
-/// use moka::future::Cache;
+/// use moka2::future::Cache;
 /// use std::time::Duration;
 ///
 /// #[tokio::main]
@@ -314,7 +314,7 @@ use std::sync::atomic::{AtomicBool, Ordering};
 /// // moka = { version = "0.12", features = ["future"] }
 /// // tokio = { version = "1", features = ["rt-multi-thread", "macros", "time" ] }
 ///
-/// use moka::{future::Cache, Expiry};
+/// use moka2::{future::Cache, Expiry};
 /// use std::time::{Duration, Instant};
 ///
 /// // In this example, we will create a `future::Cache` with `u32` as the key, and
@@ -343,7 +343,7 @@ use std::sync::atomic::{AtomicBool, Ordering};
 ///     }
 /// }
 ///
-/// /// An expiry that implements `moka::Expiry` trait. `Expiry` trait provides the
+/// /// An expiry that implements `moka2::Expiry` trait. `Expiry` trait provides the
 /// /// default implementations of three callback methods `expire_after_create`,
 /// /// `expire_after_read`, and `expire_after_update`.
 /// ///
@@ -458,9 +458,9 @@ use std::sync::atomic::{AtomicBool, Ordering};
 /// // uuid = { version = "1.1", features = ["v4"] }
 /// // tokio = { version = "1.18", features = ["fs", "macros", "rt-multi-thread", "sync", "time"] }
 ///
-/// use moka::{future::Cache, notification::ListenerFuture};
+/// use moka2::{future::Cache, notification::ListenerFuture};
 /// // FutureExt trait provides the boxed method.
-/// use moka::future::FutureExt;
+/// use moka2::future::FutureExt;
 ///
 /// use anyhow::{anyhow, Context};
 /// use std::{
@@ -554,7 +554,7 @@ use std::sync::atomic::{AtomicBool, Ordering};
 ///             }
 ///         }
 ///         // Convert the regular Future into ListenerFuture. This method is
-///         // provided by moka::future::FutureExt trait.
+///         // provided by moka2::future::FutureExt trait.
 ///         .boxed()
 ///     };
 ///
@@ -721,7 +721,7 @@ impl<K, V, S> Cache<K, V, S> {
     /// // [dependencies]
     /// // moka = { version = "0.12", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -898,7 +898,7 @@ where
     /// // moka = { version = "0.12", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -938,7 +938,7 @@ where
     /// // moka = { version = "0.12", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
     ///
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {
@@ -983,7 +983,7 @@ where
     /// // moka = { version = "0.12", features = ["future"] }
     /// // futures-util = "0.3"
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     /// use std::sync::Arc;
     ///
     /// #[tokio::main]
@@ -1112,7 +1112,7 @@ where
     /// // futures-util = "0.3"
     /// // reqwest = "0.11"
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// // This async function tries to get HTML from the given URI.
     /// async fn get_html(task_id: u8, uri: &str) -> Option<String> {
@@ -1235,7 +1235,7 @@ where
     /// // futures-util = "0.3"
     /// // reqwest = "0.11"
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// // This async function tries to get HTML from the given URI.
     /// async fn get_html(task_id: u8, uri: &str) -> Result<String, reqwest::Error> {
@@ -1461,7 +1461,7 @@ where
     /// // [dependencies]
     /// // moka = { version = "0.12", features = ["future"] }
     /// // tokio = { version = "1", features = ["rt-multi-thread", "macros" ] }
-    /// use moka::future::Cache;
+    /// use moka2::future::Cache;
     ///
     /// #[tokio::main]
     /// async fn main() {

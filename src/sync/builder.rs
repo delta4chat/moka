@@ -23,7 +23,7 @@ use std::{
 /// # Example: Expirations
 ///
 /// ```rust
-/// use moka::sync::Cache;
+/// use moka2::sync::Cache;
 /// use std::time::Duration;
 ///
 /// let cache = Cache::builder()
@@ -165,7 +165,7 @@ where
     /// // ahash = "0.8"
     /// // moka = ...
     ///
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// // The type of this cache is: Cache<i32, String, ahash::RandomState>
     /// let cache = Cache::builder()
@@ -183,7 +183,7 @@ where
     /// Here is a good example:
     ///
     /// ```rust
-    /// # use moka::sync::Cache;
+    /// # use moka2::sync::Cache;
     /// # let cache = Cache::builder()
     /// #     .build_with_hasher(ahash::RandomState::default());
     /// struct Good {
@@ -199,7 +199,7 @@ where
     /// does not specify `S`:
     ///
     /// ```compile_fail
-    /// # use moka::sync::Cache;
+    /// # use moka2::sync::Cache;
     /// # let cache = Cache::builder()
     /// #     .build_with_hasher(ahash::RandomState::default());
     /// struct Bad {
@@ -289,7 +289,7 @@ where
     /// // ahash = "0.8"
     /// // moka = ...
     ///
-    /// use moka::sync::SegmentedCache;
+    /// use moka2::sync::SegmentedCache;
     ///
     /// // The type of this cache is: SegmentedCache<i32, String, ahash::RandomState>
     /// let cache = SegmentedCache::builder(4)
@@ -307,7 +307,7 @@ where
     /// Here is a good example:
     ///
     /// ```rust
-    /// # use moka::sync::SegmentedCache;
+    /// # use moka2::sync::SegmentedCache;
     /// # let cache = SegmentedCache::builder(4)
     /// #     .build_with_hasher(ahash::RandomState::default());
     /// struct Good {
@@ -323,7 +323,7 @@ where
     /// does not specify `S`:
     ///
     /// ```compile_fail
-    /// # use moka::sync::SegmentedCache;
+    /// # use moka2::sync::SegmentedCache;
     /// # let cache = SegmentedCache::builder(4)
     /// #     .build_with_hasher(ahash::RandomState::default());
     /// struct Bad {

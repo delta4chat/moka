@@ -60,9 +60,9 @@
 //! "[mini-moka][mini-moka-crate]".
 //!
 //! - Non concurrent cache for single threaded applications:
-//!     - `moka::unsync::Cache` → [`mini_moka::unsync::Cache`][unsync-cache-struct]
+//!     - `moka2::unsync::Cache` → [`mini_moka::unsync::Cache`][unsync-cache-struct]
 //! - A simple, thread-safe, synchronous cache:
-//!     - `moka::dash::Cache` → [`mini_moka::sync::Cache`][dash-cache-struct]
+//!     - `moka2::dash::Cache` → [`mini_moka::sync::Cache`][dash-cache-struct]
 //!
 //! [mini-moka-crate]: https://crates.io/crates/mini-moka
 //! [unsync-cache-struct]:

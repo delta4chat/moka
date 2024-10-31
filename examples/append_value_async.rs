@@ -3,7 +3,7 @@
 
 use std::sync::Arc;
 
-use moka::{future::Cache, Entry};
+use moka2::{future::Cache, Entry};
 use tokio::sync::RwLock;
 
 #[tokio::main]

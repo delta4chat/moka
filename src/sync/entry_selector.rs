@@ -79,7 +79,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::{
+    /// use moka2::{
     ///     sync::Cache,
     ///     ops::compute::{CompResult, Op},
     /// };
@@ -245,7 +245,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache: Cache<String, u64> = Cache::new(100);
     /// let key = "key1".to_string();
@@ -303,7 +303,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache: Cache<String, Option<u32>> = Cache::new(100);
     /// let key = "key1".to_string();
@@ -335,7 +335,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache: Cache<String, u32> = Cache::new(100);
     /// let key = "key1".to_string();
@@ -365,7 +365,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache: Cache<String, String> = Cache::new(100);
     /// let key = "key1".to_string();
@@ -433,7 +433,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache: Cache<String, u32> = Cache::new(100);
     /// let key = "key1".to_string();
@@ -494,7 +494,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache: Cache<String, u32> = Cache::new(100);
     /// let key = "key1".to_string();
@@ -621,7 +621,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::{
+    /// use moka2::{
     ///     sync::Cache,
     ///     ops::compute::{CompResult, Op},
     /// };
@@ -787,7 +787,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache: Cache<String, u64> = Cache::new(100);
     /// let key = "key1".to_string();
@@ -846,7 +846,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache: Cache<String, Option<u32>> = Cache::new(100);
     /// let key = "key1".to_string();
@@ -877,7 +877,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache: Cache<String, u32> = Cache::new(100);
     /// let key = "key1".to_string();
@@ -907,7 +907,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache: Cache<String, String> = Cache::new(100);
     /// let key = "key1".to_string();
@@ -983,7 +983,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache: Cache<String, u32> = Cache::new(100);
     /// let key = "key1".to_string();
@@ -1044,7 +1044,7 @@ where
     /// # Example
     ///
     /// ```rust
-    /// use moka::sync::Cache;
+    /// use moka2::sync::Cache;
     ///
     /// let cache: Cache<String, u32> = Cache::new(100);
     /// let key = "key1".to_string();

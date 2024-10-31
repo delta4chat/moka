@@ -1,4 +1,4 @@
-use moka::sync::Cache;
+use moka2::sync::Cache;
 use std::thread::sleep;
 use std::time::Duration;
 

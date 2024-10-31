@@ -9,9 +9,9 @@ $ cargo run --example <example_name> -F sync,future
 
 Each example has a suffix `_async` or `_sync`:
 
-- `_async` indicates that the example uses the `moka::future::Cache`, which is a
+- `_async` indicates that the example uses the `moka2::future::Cache`, which is a
   `Future`-aware, concurrent cache.
-- `_sync` indicates that the example uses the `moka::sync::Cache`, which is a
+- `_sync` indicates that the example uses the `moka2::sync::Cache`, which is a
   multi-thread safe, concurrent cache.
 
 ## Basics of the Cache API

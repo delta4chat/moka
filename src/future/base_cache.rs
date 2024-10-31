@@ -295,7 +295,7 @@ where
                         // the entry _after_ we obtained `now`.
                         now = now.max(lm);
 
-                        // Convert `last_modified` from `moka::common::time::Instant` to
+                        // Convert `last_modified` from `moka2::common::time::Instant` to
                         // `std::time::Instant`.
                         let lm = self.inner.clocks().to_std_instant(lm);
 
@@ -998,7 +998,7 @@ struct Clocks {
     _lock: Mutex<()>,
     has_expiration_clock: AtomicBool,
     expiration_clock: SyncRwLock<Option<Clock>>,
-    /// The time (`moka::common::time`) when this timer wheel was created.
+    /// The time (`moka2::common::time`) when this timer wheel was created.
     origin: Instant,
     /// The time (`StdInstant`) when this timer wheel was created.
     origin_std: StdInstant,
@@ -1224,7 +1224,7 @@ where
             build_hasher.clone(),
         );
 
-        // Assume that getting `moka::common::Instant::now` has lower latency than
+        // Assume that getting `moka2::common::Instant::now` has lower latency than
         // `StdInstant::now`.
         let now_std = StdInstant::now();
         let now = Instant::now();
