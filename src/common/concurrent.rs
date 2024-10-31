@@ -16,14 +16,7 @@ pub(crate) mod housekeeper;
 // https://github.com/rust-lang/rust/issues/32976
 // #[cfg_attr(target_has_atomic = "64", path = "common/time_atomic64.rs")]
 
-#[cfg_attr(
-    all(feature = "atomic64", feature = "quanta"),
-    path = "concurrent/atomic_time/atomic_time.rs"
-)]
-#[cfg_attr(
-    not(all(feature = "atomic64", feature = "quanta")),
-    path = "concurrent/atomic_time/atomic_time_compat.rs"
-)]
+#[path = "concurrent/atomic_time/atomic_time.rs"]
 pub(crate) mod atomic_time;
 
 #[cfg(feature = "unstable-debug-counters")]
