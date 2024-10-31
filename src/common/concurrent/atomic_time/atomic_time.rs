@@ -1,9 +1,8 @@
 use crate::common::time::{clock::Instant as ClockInstant, Instant};
 
-use std::{
-    any::TypeId,
-    sync::atomic::{AtomicU64, Ordering},
-};
+use portable_atomic::{AtomicU64, Ordering};
+
+use core::any::TypeId;
 
 #[derive(Debug)]
 pub(crate) struct AtomicInstant {
@@ -46,7 +45,7 @@ impl AtomicInstant {
                 TypeId::of::<quanta::Instant>()
             );
             Some(Instant::new(unsafe {
-                std::mem::transmute::<u64, quanta::Instant>(ts)
+                core::mem::transmute::<u64, quanta::Instant>(ts)
             }))
         }
     }
@@ -56,7 +55,7 @@ impl AtomicInstant {
             TypeId::of::<ClockInstant>(),
             TypeId::of::<quanta::Instant>()
         );
-        let ts = unsafe { std::mem::transmute::<quanta::Instant, u64>(instant.inner_clock()) };
+        let ts = unsafe { core::mem::transmute::<quanta::Instant, u64>(instant.inner_clock()) };
         self.instant.store(ts, Ordering::Release);
     }
 }

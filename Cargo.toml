@@ -68,6 +68,7 @@ log = { version = "0.4", optional = true }
 
 # Optional dependencies (unstable-debug-counters)
 once_cell = { version = "1.7", optional = true }
+portable-atomic = "1.9.0"
 
 [dev-dependencies]
 actix-rt = "2.8"
